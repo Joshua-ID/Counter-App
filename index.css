@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167, 238, 243);
+    height: 100vh;
+    background-size: 30em;
+    padding-top: 15%;
+
+
+}
+
+span{
+    font-family: impact;
+    font-size: 150px;
+    padding: 15px;
+    margin-top: 5%;
+
+}
+
+.btn{
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px black;    
+}
+
+
+.btn-container button{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700; 
+}
+
+.btn-container button:hover{
+    background-color: green;
+    padding: 10px;
+}
