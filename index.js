@@ -1,10 +1,10 @@
 "use strict";
-//buttons and counter text
+
+// buttons and counter text
 const counter = document.querySelector("#counter");
 const btns = document.querySelectorAll(".btn");
 
-//initialize the count variable
-
+// initialize the count variable
 let count = 0;
 
 btns.forEach((btn) => {
@@ -13,31 +13,20 @@ btns.forEach((btn) => {
 
     if (styles.contains("increase")) {
       count++;
-    } 
-    else if (styles.contains("decrease")) {
-      count--;
-
-// Don't count in minus
-      if (count === 0) {
-      } else {
-      // count--;
+    } else if (styles.contains("decrease")) {
+      // Only decrement if count is greater than 0
+      if (count > 0) {
+        count--;
       }
-
     } else {
-          count = 100;
-        }
+      count = 0;
+    }
+  
 
     // for colors
-
     if (count > 0) {
       counter.style.color = "blue";
-    }
-
-    if (count < 0) {
-      counter.style.color = "red";
-    }
-
-    if (count === 0) {
+    } else if (count === 0) {
       counter.style.color = "black";
     }
 
